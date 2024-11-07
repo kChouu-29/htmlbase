@@ -1,0 +1,60 @@
+<!-- Yêu cầu:
+Tạo một file HTML và đặt tên là trang_da_phuong_tien.html.
+
+Trong trang web, tạo các phần sau:
+
+Tiêu đề và mô tả trang: Đặt tiêu đề là "Trang Web Đa Phương Tiện" và mô tả ngắn gọn về nội dung của trang.
+Nội dung chi tiết:
+
+Video: Nhúng một video MP4 vào trang. Đặt tiêu đề "Video" và mô tả ngắn về nội dung video.
+Âm thanh: Nhúng một file âm thanh MP3 có thể phát được trên trang. Đặt tiêu đề "Âm thanh" và mô tả ngắn về nội dung âm thanh.
+Hình ảnh tĩnh: Chèn một hình ảnh (PNG hoặc JPEG). Đặt tiêu đề "Hình ảnh" và mô tả ngắn về hình ảnh.
+Ảnh động GIF: Chèn một ảnh động GIF. Đặt tiêu đề "GIF" và mô tả ngắn về ảnh GIF.
+Cấu trúc và tổ chức:
+
+Mỗi phần nội dung (video, âm thanh, hình ảnh, GIF) nên nằm trong một phần (<section>) riêng biệt và có tiêu đề riêng.
+Đảm bảo đặt tên file phương tiện trùng với tên được chỉ định trong các thẻ src của thẻ HTML.
+Thiết kế tối thiểu:
+
+Sử dụng HTML cơ bản; không yêu cầu CSS hay JavaScript.
+Đảm bảo rằng các phần tử được trình bày rõ ràng và dễ đọc. -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MutilMedia</title>
+    </head>
+    <body style="background-color: black;">
+        <h1 style="color: aqua; font-size: 30px; text-align: center;">
+            <strong>This Is Mutil Media Web</strong>
+        </h1>
+
+        <!-- Part Video -->
+        <section>
+            <p style="color: white;">Need to introduce yourself in a business, interview, team or school situation? 
+            Our free introduction video maker makes it easy to craft an engaging self-introduction presentation to talk about your interests, 
+            qualities and "Who you are" in a video as a complement to your resume or profile.
+            Browse professional introduction video templates, and start making yours by adding music, photos, texts, etc. 
+            Try it online!</p>
+            <video src="https://cdn.pixabay.com/video/2023/02/28/152522-803189119_large.mp4" controls width="600px" height="450px"></video>
+            <figcaption>Video The Heart</figcaption>
+        </section>
+
+        <!-- Part Audio -->
+        <section>
+            <audio controls>
+                <source src="c:\Users\MDC\Downloads\CẢM ƠN VÌ ĐÃ YÊU (SUY Ver.) - @DARKIOFFICIAL x CM1X x PHAN ÂU NHỰT - Official Visualizer.mp3" type="audio/mp3">
+            </audio>
+            <figcaption>Please Calm My Mind</figcaption>
+        </section>
+
+        <!-- Part GIF -->
+        <section>
+            <img src="https://toigingiuvedep.vn/wp-content/uploads/2022/04/anh-gif.gif" width="300px" height="450px">
+        </section>
+
+        <!-- Part Image -->
+        <section>
+            <img src="c:\Users\MDC\Pictures\images.png">
+        </section>
+    </body>
+</html>
