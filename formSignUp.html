@@ -1,0 +1,53 @@
+<!-- Tiêu đề trang là "Đăng ký Sự kiện".
+Form bao gồm các trường:
+Họ và tên (input type="text", bắt buộc)
+Email (input type="email", bắt buộc)
+Số điện thoại (input type="tel", không bắt buộc)
+Ngày sinh (input type="date")
+Giới tính (input type="radio" với các lựa chọn: Nam, Nữ, Khác)
+Lựa chọn sự kiện (select, các tùy chọn: Hội thảo, Workshop, Giao lưu)
+Thêm một nút "Đăng ký" để gửi form. -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Sign Up</title>
+        
+    </head>
+    <form action="" method="post">
+    <h1 style="color: red;">Form Đăng Kí</h1>
+    <label for="username" >Tên Đăng Ký</label><br>
+    <input type="text" name="username" id="username" placeholder="Name" required><br>
+    <label for="email">Email</label><br>
+    <input type="text" name="email" id="email" placeholder="Email" required><br>
+    <label for="PhoneNumber">Số Điện Thoại</label><br>
+    <input type="tel" name="PhoneNumber" id="PhoneNumber" placeholder="PhoneNumber" required><br>
+    <label for="Birtday">Nhập Ngày Sinh</label><br>
+    <input type="date" name="Birtday" id="Birtday" placeholder="Ngày Sinh" required><br>
+    <section class="Sex">
+        <span>Giới Tính</span><br>
+        <label for="Male">Male</label>
+        <input type="radio" name="Sex" id="Male" value="Male" required>
+        <label for="Female">Female</label>
+        <input type="radio" name="Sex" id="Female" value="Female" required>
+    </section>
+    <section class="Event">
+        <span>Sự Kiện</span><br>
+        <label for="Performace">Performace</label>
+        <input type="checkbox" name="Event" id="Performace" value="Performace">
+        <label for="Workshop">Workshop</label>
+        <input type="checkbox" name="Event " id="Workshop" value="Workshop">
+        <label for=""Communicate>Communicate</label>
+        <input type="checkbox" name="Event" id="Communicate" value="Communicate">
+    </section>
+    <section class="Time-SignUp">
+        
+        <label for="time">Time SignUp</label>
+        <select id="time" name="Time-SignUp">
+            <option value="Morning">Morning</option>
+            <option value="Lunch">Lunch</option>
+            <option value="Evening">Evening</option>
+    </select>
+    </section>
+    <input type="submit" value="Đăng Kí"></form>
+
+</html>
